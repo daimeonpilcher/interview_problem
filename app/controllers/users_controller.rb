@@ -4,7 +4,7 @@ class UsersController < ApplicationController
   # GET /users
   # GET /users.json
   def index
-    @users = User.all
+    @users = User.all.select(:id, :first_name, :last_name, :email)
   end
 
   # GET /users/1

@@ -13,19 +13,19 @@
 
   <div class="field">
     <%= f.label :first_name %><br>
-    <%= f.text_field :first_name %>
+    <%= f.text_field :first_name, :placeholder => 'First Name' %>
   </div>
   <div class="field">
     <%= f.label :last_name %><br>
-    <%= f.text_field :last_name %>
+    <%= f.text_field :last_name, :placeholder => 'Last Name' %>
   </div>
   <div class="field">
     <%= f.label :email %><br>
-    <%= f.text_field :email %>
+    <%= f.text_field :email, :type => 'email', :placeholder => 'Email Address' %>
   </div>
   <div class="field">
     <%= f.label :social_security_number %><br>
-    <%= f.text_field :social_security_number %>
+    <%= f.text_field :social_security_number, :placeholder => 'XXX-XX-XXXX'%>
   </div>
   <div class="actions">
     <%= f.submit %>
